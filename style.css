@@ -1,0 +1,87 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Carousel */
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #3d3d3d;
+}
+
+/* Quiz */
+.quiz {
+  margin-top: 30px;
+}
+
+.options button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+#quizResult {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #90ee90;
+}
+
+/* Joke */
+.joke {
+  margin-top: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+  }
+
+  .carousel-controls button,
+  .options button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

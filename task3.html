@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advance web features</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Quiz & Carousel</h1>
+  </header>
+
+  <main class="container">
+    <!-- Carousel -->
+    <section class="carousel">
+      <img id="carouselImage" src="https://lirp.cdn-website.com/efc89e53/dms3rep/multi/opt/the-history-of-merry-go-rounds-1920w.jpg" alt="Carousel" />
+      <img src="https://lirp.cdn-website.com/efc89e53/dms3rep/multi/opt/the-history-of-merry-go-rounds-1920w.jpg" alt="Carousel" />
+      <div class="carousel-controls">
+        <button onclick="prevImage()">◀ Prev</button>
+        <button onclick="nextImage()">Next ▶</button>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section class="quiz">
+      <h2>Quiz Time!</h2>
+      <div id="question">Loading question...</div>
+      <div id="options" class="options"></div>
+      <div id="quizResult"></div>
+    </section>
+
+    <!-- Joke API Section -->
+    <section class="joke">
+      <h2>Random Joke</h2>
+      <p id="joke">Loading...</p>
+      <button onclick="fetchJoke()">Get New Joke</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
